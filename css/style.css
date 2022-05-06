@@ -96,9 +96,7 @@ html {
 	background-color: var(--main-color);
 	padding:1rem 3rem 3rem 3rem;
 }
-.about .main h4{
-	text-decoration: underline;
-}
+
 
 .about .main .box-container{
 	display: flex;
@@ -222,6 +220,9 @@ html {
 	}
 }
 @media (max-width: 500px){
+	.about .main h4{
+	text-decoration: underline;
+}
 	.about .main .box-container .image{
 		width: 100%;
 	}
