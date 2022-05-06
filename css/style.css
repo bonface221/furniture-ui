@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 	border: none;
 	outline: none;
-	transition: all 0.1s ease;
+	/* transition: all 0.1s ease; */
 	text-decoration: none;
 }
 :root {
@@ -114,7 +114,7 @@ html {
 		border-top: var(--border);
 		border-bottom: var(--border);
 		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-		transition: 0.2s linear;
+		transition:linear .2s ease;
 	}
 	.header .navbar a {
 		margin: 1.5rem;
