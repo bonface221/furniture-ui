@@ -35,6 +35,10 @@ html {
 ::-webkit-scrollbar-thumb {
 	background-color: var(--background);
 }
+.heading{
+	text-align: center;
+	font-size: 3.5rem;
+}
 .header {
 	display: flex;
 	align-items: center;
@@ -83,6 +87,47 @@ html {
 	color: var(--main-color);
 	cursor: pointer;
 }
+.about{
+	background-color: var(--background);
+	padding: 3rem ;
+	color: var(--background);
+}
+.about .main{
+	background-color: var(--main-color);
+	padding:1rem 3rem 3rem 3rem;
+}
+.about .main h4{
+	text-decoration: underline;
+}
+
+.about .main .box-container{
+	display: flex;
+	/* gap: 2rem; */
+	flex-wrap: wrap;
+	height: 70vh;
+	justify-content:space-evenly;
+}
+.about .main .text{
+	font-size: 3rem;
+	padding-right: 1rem;
+}
+.about .main .text h4{
+	font-size: 3.5rem;
+	font-weight: 600;
+
+}
+.about .main .box-container .image img{
+	object-fit: cover;
+	height: 45rem;
+	width: 25rem;
+}
+.about .main .box-container .img1{
+	align-self: flex-end;
+}
+.about .main .box-container .img2{
+	align-self: center;
+}
+
 
 /* media querries */
 @media (max-width: 1300px) {
@@ -93,6 +138,49 @@ html {
 		left: 15.5%;
 		top: 13%;
 	}
+}
+@media (max-width: 1260px){
+	.about .main .box-container .image img{
+	object-fit: cover;
+	height: 45rem;
+	width: 17rem;
+}
+	.about .main .text{
+	font-size: 2.6rem;
+	padding-right: 1rem;
+}
+.about .main .text h4{
+	font-size: 3.1rem;
+	font-weight: 600;
+}
+}
+@media (max-width:1050px){
+	.about .main .box-container .image img{
+	object-fit: cover;
+	height: 30rem;
+	width: 17rem;
+}
+.about .main .box-container .img1{
+	align-self: flex-start;
+}
+.about .main .box-container .img2{
+	align-self: flex-start;
+}
+.about .main .box-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	height: fit-content;
+	justify-content:space-evenly;
+}
+}
+@media (max-width: 987px){
+	.about .main .text{
+	font-size: 2.6rem;
+	padding-right: 1rem;
+	width: 65%;
+
+}
 }
 @media (max-width: 768px) {
 	#menu-btn {
@@ -133,6 +221,24 @@ html {
 		margin-left: 1rem;
 	}
 }
+@media (max-width: 500px){
+	.about .main .box-container .image{
+		width: 100%;
+	}
+	.about .main .box-container .image img{
+	object-fit: cover;
+	height: 30rem;
+	width:100%;
+}
+	.about .main .text{
+	font-size: 2rem;
+	padding-right: 1rem;
+}
+.about .main .text h4{
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+}
 @media (max-width: 450px) {
 	html {
 		font-size: 55%;
@@ -144,4 +250,14 @@ html {
 		left: 10%;
 		top: 13%;
 	}
+}
+@media (max-width: 375px){
+	.about .main .text{
+	font-size: 1.6rem;
+	padding-right: 1rem;
+}
+	.about .main .text h4{
+	font-size: 2.5rem;
+	font-weight: 600;
+}
 }
