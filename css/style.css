@@ -126,6 +126,91 @@ html {
 	align-self: center;
 }
 
+.gallery .main .box-container{
+	display: flex;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+}
+.gallery .main .box-container .box{
+	flex: 1 1 30%;
+}
+.gallery .main .box-container .boxb{
+	flex: 1 1 35%;
+}
+
+.gallery .main .box-container .box img{
+	height: 34rem;
+	width: 100%;
+	object-fit: cover;
+}
+.gallery{
+	background-color: var(--background);
+	padding: 3rem ;
+	color: var(--background);
+}
+	
+
+.gallery .main{
+	background-color: var(--main-color);
+	padding:1rem 3rem 3rem 3rem;
+}
+.contact .main .box-container .image{
+	width: 40rem;
+}
+.contact{
+	background-color: var(--background);
+	padding: 3rem ;
+	color: var(--background);
+
+}
+.contact .main{
+	background-color: var(--main-color);
+	padding:2rem 3rem 3rem 3rem;
+
+}
+.contact .main .box-container .form textarea,.contact .main .box-container .form input{
+	padding: .5rem 2rem;
+    margin: 1rem 0;
+    width: 100%;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+	background-color: var(--inputs);
+}
+.contact .main .box-container .form label{
+	font-size: 2rem;
+	font-weight: bold;
+}
+.contact .main .box-container .form textarea{
+	
+    height: 18rem;
+    resize: none;
+    width: 100%;
+}
+.contact .main .box-container .form{
+	font-size: 2.5rem;
+}
+
+.contact .main .box-container{
+	display: flex;
+	gap: 2.5rem;
+	justify-content: center;
+	padding-top: 2rem;
+	flex-wrap: wrap;
+}
+.contact .main .box-container .image img{
+	height: 100%;
+	width:100%
+}
+#submit{
+	width: 30%;
+	color: white;
+	border-radius: 25%;
+}
+
+
+
+
 
 /* media querries */
 @media (max-width: 1300px) {
@@ -180,6 +265,7 @@ html {
 
 }
 }
+
 @media (max-width: 768px) {
 	#menu-btn {
 		display: initial;
@@ -231,6 +317,19 @@ html {
 	height: 30rem;
 	width:100%;
 }
+.about{
+	padding: 0 1rem;
+}
+.about .main{
+	background-color: var(--main-color);
+	padding:1rem 1rem 3rem 1rem;
+}
+.gallery{
+	padding:0 1rem;
+}
+.gallery .main{
+	padding:1rem 1rem 3rem 1rem;
+}
 	.about .main .text{
 	font-size: 2rem;
 	padding-right: 1rem;
@@ -239,6 +338,12 @@ html {
 	font-size: 2.5rem;
 	font-weight: 600;
 }
+.gallery .main .box-container .box{
+	flex: 1 1 100%;
+}
+
+
+
 }
 @media (max-width: 450px) {
 	html {
@@ -260,5 +365,10 @@ html {
 	.about .main .text h4{
 	font-size: 2.5rem;
 	font-weight: 600;
+}
+	#submit{
+	width: 50%;
+	color: white;
+	border-radius: 25%;
 }
 }
